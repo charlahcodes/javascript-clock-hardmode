@@ -1,8 +1,9 @@
 body {
-  background-color: black; }
+  background-color: white; }
 
 .clock {
   color: white;
   font: 5em 'Lato', sans-serif;
   text-align: center;
+  text-transform: uppercase;
   margin-top: 20%; }
