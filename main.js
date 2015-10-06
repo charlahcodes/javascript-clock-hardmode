@@ -13,10 +13,13 @@ var intervalID = window.setInterval(function displayClock() {
 
   var time = hoursHex + minutesHex + secondsHex;
 
-  console.log(time);
+  if ((time.length > 4) && (time.length < 6)) {
+    time = "0" + time;
+  } else if (time.length < 5) {
+    time = "00" + time;
+  };
 
   var backgroundHex = "#"+time;
-
 
   $('#clock').text(time);
 
